@@ -1,0 +1,83 @@
+﻿body, header, section, ul, li, a, table, tr, td, img  {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+/*==============MENU==============*/
+menu {
+    border-bottom: 2px solid #000;
+}
+    menu ul {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    
+    }
+        menu ul li {
+            display: inline-block;
+        }
+            a {
+                padding: 5px;
+                font-size: 2.5em;
+            }
+                a:hover {
+                    color: #000;
+                }
+/*==============Section============*/
+
+section {
+    width: 735px;
+}
+#table {
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 5px 5px 10px 0;
+    border: 2px solid #000;
+    float: left;
+}
+
+#table fieldset {
+    border: 2px solid #000;
+    text-align: center;
+    padding: 0px;
+    width: 210px;
+    height: 145px;
+    font-size: 1.7em;
+}
+#table fieldset table {
+    height: 90%;
+}
+#table fieldset table tr {
+    padding: 0;
+}
+	#cow {
+		line-height: 50px;
+	}
+	#spos {
+		position: relative;
+		top: 10px;
+	}
+/*===========Prace==========*/
+
+#prece {
+    float: right;
+    font-size: 2em;
+    margin-top: 60px;
+}
+#prece ul li {
+    margin: 20px 0;
+}
+#prece input {
+    width: 160px;
+}
+#prece output {
+    position: relative;
+    top: -48px;
+    left: -73px;
+}

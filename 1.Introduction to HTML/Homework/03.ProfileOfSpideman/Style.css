@@ -1,0 +1,25 @@
+﻿
+  body {
+      background-color: rgb(182, 76, 50);
+  }
+  nav ul {
+      margin-top: 0px;
+      text-align: center;
+      list-style-type: none;
+  }
+  nav a {
+      color:#fff;
+      text-decoration: none;
+  }
+  nav a:hover{
+      color: #B8B8B8;
+
+  }
+      nav ul li {
+          display: inline-block;
+          margin: 0 150px 0 150px;
+      }
+      header {
+          margin-top: 50px;
+      }
+

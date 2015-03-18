@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Forma za lichni danni</title>
+    <style>
+        form {
+            width: 660px;
+            margin: 60px auto;
+        }
+        tr td:first-child {
+            text-align: right;
+			font-weight: bold;
+        }
+        #ult td {
+             text-align: center;
+        }
+        .wi {
+            width: 95%;
+        }
+        textarea {
+           resize: none;
+        }
+        tfoot {
+            background: #d1ede1;
+        }
+                             
+    </style>
+</head>
+<body>
+    <form>
+        <table border="1" cellspacing="0" >
+            <thead>
+                <tr>
+                    <td><label for="ln">Last Name</label> </td>
+                    <td><input type="text" class="wi" id="ln" placeholder="Obama" tabindex="2" /></td>
+                </tr>
+                <tr>
+                    <td><label for="fn">Firest Name</label></td>
+                    <td><input type="text" class="wi" id="fn" placeholder="Barack" /></td>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr id="ult">
+                    <td colspan="2">
+                        <input type="submit" value="Submit" />
+                        <input type="reset" value="Clear This Form" />
+                    </td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td><label for="tr">Address</label></td>
+                    <td><textarea rows="4" class="wi" id="tr" placeholder="17 Hristo Botev Str."></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="ci">City</label></td>
+                    <td>
+                        <input type="text" id="ci" placeholder="Blagoevgrad" />
+                        <label for="st">State</label>
+                        <input type="text" id="st" size="8" placeholder="Kn." />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="zip">Zip/Postal Code</label></td>
+                    <td><input type="text" id="zip" size="10" placeholder="31030" /></td>
+                </tr>
+                <tr>
+                    <td><label for="country">Country</label></td>
+                    <td>
+                        <select name="country" id="country">
+                            <option value="bu" selected>Bulgaria</option>
+                            <option value="ge">Germany</option>
+                            <option value="it">Italy</option>
+                            <option value="fr">France</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="tel"></label>Phone(contry code,<br /> area code, number)</td>
+                    <td>
+                        (+<input type="text" class="tel" id="tel" size="3" placeholder="359" />)
+                        <input type="text" class="tel" size="3" placeholder="88" />-
+                        <input type="text" class="tel" size="7" placeholder="8334343" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">E-mail</label></td>
+                    <td><input type="email" class="wi" id="email" aria-required="true" pattern="[a-zA-Z0-9_]{3,}@[a-zA-Z0-9_]{3,}.[a-zA-Z0-9_]{2,4}" placeholder="sample@email.com" /></td>
+                </tr>
+                <tr>
+                    <td><label for="date">Birth date</label></td>
+                    <td>
+                        <label for="date">Month</label>
+                        <input type="text" id="date" size="2" placeholder="06" maxlength="2" />
+
+                        <label for="day">Day</label>
+                        <input type="text" id="day" placeholder="14" size="2" maxlength="2" />
+
+                        <label for="year">Year(4 digit)</label>
+                        <input type="text" id="year" placeholder="2014" size="4" maxlength="4" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender</label></td>
+                    <td>
+                        <select name="gender" id="gender">
+                            <option value="male" selected>Male</option>
+                            <option value="female">female</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Starting date</td>
+                    <td>
+                        <input type="radio" name="data" value="2013" />Spring 2013
+                        <input type="radio" name="data" value="2014" />Spring 2014
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="coments">Comments/Questions</label></td>
+                    <td><textarea rows="6" class="wi" id="coments"></textarea></td>
+                </tr>
+            </tbody>
+            
+        </table>
+    </form>
+</body>
+</html>
